@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modole1</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+
+    <script>
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+      auto: true,
+autoControls: true,
+pager: false,
+slideWidth: 3999,
+useCSS : true,
+
+
+    });
+  });
+
+  function close(){
+    document.getElementById("resp-dropc").style.display = "none";
+  }
+    </script>
+
+
+</head>
+<body>
+  <div id="topnav">
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#band">Band</a>
+        <a href="#tour">Tour</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">More 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Merchandice</a>
+            <a href="#">Extras</a>
+            <a href="#">Media</a>
+          </div>
+        </div> 
+    </div>
+    <div class="navbar2">
+        <div class="dropdown" id="resp-drop">
+            <button class="dropbtn">Home <span><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="dropdown-content" id="resp-dropc">
+              <a href="#band">Band</a>
+              <a href="#tour">Tour</a>
+              <a href="#contact">Contact</a>
+              <a href="#">Merch</a>
+            </div>
+          </div> 
+    </div>
+  </div>
+  
+    <div id="home" class="slider">
+        <div class="img">
+            <img src="https://www.w3schools.com/w3images/la.jpg" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="https://www.w3schools.com/w3images/ny.jpg" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="https://www.w3schools.com/w3images/chicago.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+   <div id="band">
+       <div id="text">
+        <h5>THE BEND</h5>
+        <p style="font-style: italic; width: auto;">We love music</p>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+        <div id="name-img">
+         <div class="name-img-class">
+            <p><sb>N</sb>ame</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" srcset="">
+         </div>
+         <div class="name-img-class">  <p><sb>N</sb>ame</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" srcset="">
+         </div>
+         <div class="name-img-class">  <p><sb>N</sb>ame</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" srcset="">
+         </div>
+        </div>
+   </div>
+
+
+   <div id="tour">
+       <h6>TOUR DATES</h6>
+       <p style="color: rgb(199, 199, 199);"><i>Remember to book your tickets!</i></p>
+       <div id="months">
+           <ul>
+               <li>Septamber   <span>Sold out</span></li><hr>
+               <li>Octomber  <span>Sold out</span></li><hr>
+               <li>November <span id="l3">3</span></li>
+           </ul>
+       </div>
+       <div id="tickets-img">
+           <div class="tick-img">
+               <div class="cityimg" id="newyork">
+                   <div class="overlay"></div>
+               </div>
+               <div class="city-desc">
+                   <h4>New York</h4>
+                   <p>Fri 27 Nov 2016</p>
+                   <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                   <button class="button">Buy Tickets</button>
+               </div>
+           </div>
+           <div class="tick-img">
+            <div class="cityimg" id="paris">
+                <div class="overlay"></div>
+            </div>
+            <div class="city-desc">
+                <h4>Paris</h4>
+                <p>Sat 28 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="button">Buy Tickets</button>
+            </div>
+           </div>
+           <div class="tick-img">
+            <div class="cityimg" id="francisco">
+                <div class="overlay"></div>
+            </div>
+            <div class="city-desc">
+                <h4>San Francisco</h4>
+                <p>Sun 29 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="button">Buy Tickets</button>
+            </div>
+           </div>
+       </div>
+   </div>
+
+   <div id="contact">
+       <p id="cont">CONTACT</p>
+       <p style="font-style: italic; color: rgb(100, 100, 100);">Fan? Drop a note!</p>
+        <div id="cont-items">
+            <div id="cont-item1">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i>Chicago, US</li>
+                    <li><i class="fa fa-phone"></i>Phone: +00 151515</li>
+                    <li><i class="fa fa-envelope"></i>Email: mail@mail.com</li>
+                </ul>
+            </div>
+            <div id="cont-item2">
+                <form action="">
+                    <input id="name" type="text" placeholder="Name"> <input id="email" type="email" placeholder="Email">
+                    <input id="message" type="text" placeholder="Message" >
+                    <button id="send" class="button">SEND</button>
+                </form>
+            </div>
+        </div> 
+   </div>
+   <div id="roadimg">
+       <img src="https://www.w3schools.com/w3images/map.jpg" alt="" srcset="" style="width: 100%;">
+       <footer><p>Demo Created by Akshay Mahajan.</p></footer>
+   </div>
+</body>
+</html>

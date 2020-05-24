@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar2{
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+  }
+
+#resp-drop{
+    display: none;
+    width: 100vw;
+}
+
+#resp-drop button{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#resp-dropc{
+    width: 100vw;
+    background-color: black;
+}
+
+#resp-dropc a{
+    color: white;
+    font-size: 18px;
+}
+
+
+
+#topnav{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.navbar {
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(197, 197, 197);
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.slider{
+    width: 100%;
+    height: 100%;
+    border: none;
+  
+}
+
+.img img{
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    
+}
+
+
+#band{
+    height: 90%;
+}
+
+#text{
+    height: 45%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#text h5{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#text p{
+    width: 60%;
+    text-align: justify;
+}
+
+
+#name-img{
+    height: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 200px 10px 200px;
+}
+
+.name-img-class{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.name-img-class img{
+    width: 200px;
+    border-radius: 3px;
+}
+
+
+#tour{
+    height: 110%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#tour h6{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#months{
+    width: 55%;
+    height: 110px;
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#months li{
+    list-style-type: none;
+    margin: 5px 0 5px 5px;
+}
+
+#months li span{
+    color: white;
+    background-color: rgb(233, 74, 45);
+    padding: 2px 4px;
+    text-align: center;
+    margin-left: 15px;
+
+}
+
+#months #l3{
+    font-size: 16px;
+    background-color: black;
+    padding: 2px 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+}
+
+#tickets-img{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tick-img{
+    width: 270px;
+    height: 400px;
+    background-color: white;
+}
+
+.cityimg{
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+   
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+   
+}
+
+.overlay:hover{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+
+
+
+#newyork{
+    background-image: url('https://www.w3schools.com/w3images/newyork.jpg');
+}
+
+#paris{
+    background-image: url('https://www.w3schools.com/w3images/paris.jpg');
+}
+
+#francisco{
+    background-image: url('https://www.w3schools.com/w3images/sanfran.jpg');
+}
+
+.city-desc{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 120px;
+}
+
+button:hover{
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+
+
+#contact{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 0;
+}
+
+#contact #cont{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+#cont-items{
+    width: 55%;
+    height: 50%;
+    background-color: bluekfhviolet;
+    display: flex;
+}
+
+#cont-item1{
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+}
+#cont-item1 li{
+    font-size: 18px;
+    list-style-type: none;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#cont-item1 li i{
+    margin-right: 15px;
+}
+
+#cont-item2{
+    width: 50%;
+    height: 100%;
+}
+
+#cont-item2 input{
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+#email{
+    margin-left: 10px;
+}
+#message{
+    margin-top: 10px;
+    width: 417px;
+}
+
+#send{
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 81%;
+}
+
+footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) { 
+
+    .img img{
+        width: 100vw;
+        height: 100vh;
+    }
+      
+    #text p{
+        width: 90vw;
+        padding: 10px;
+    }
+
+    #name-img{
+        padding: 10px;
+    }
+
+    #months{
+        width: 90vw;
+    }
+
+    #tickets-img{
+        width: 90vw;
+        padding: 0;
+    }
+
+    .tick-img{
+        width: 30%;
+        margin: 0;
+    }
+
+    #contact{
+        height: 80vh;
+    }
+
+    #cont-items{
+        width: 90vw;
+    }
+    #cont-item2 input{
+        width: 100%;
+        margin-left: 0 ;
+        margin-bottom: 10px;
+  }
+
+}
+
+
+
+@media(max-width: 600px){
+
+    #topnav{
+        font-size: 16px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    #resp-drop{
+        display: block;
+    }
+
+    .slider{
+        height: 50vh;
+    }
+
+    .img img{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #band{
+        height: auto;
+    }
+    
+    #text p{
+        width: 100vw;
+        padding: 10px;
+    }
+
+    #name-img{
+        width: 100vw;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 70px 0;
+    }
+
+    #tour{
+        height: auto;
+    }
+
+    #tour p{
+        margin: 20px 0;
+    }
+
+    #months{
+        width: 90%;
+    }
+
+    #tickets{
+        width: 100vw;
+        height: 250vh;
+    }
+
+    #tickets-img{
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .tick-img{
+        width: 90%;
+        margin: 0;
+    }
+
+    #tour .tick-img p{
+        margin: 0;
+    }
+
+    #contact{
+        height: 90vh;
+    }
+
+    #cont-items{
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 10px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    #cont-item1{
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 0;
+    }
+
+    #cont-item2{
+        width: 100%;
+        position: relative;
+    }
+
+    #cont-item2 input{
+          width: 100%;
+          margin-left: 0 ;
+          margin-bottom: 10px;
+    }
+
+    #message{
+        margin-top: 0;
+    }
+
+    #send{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
